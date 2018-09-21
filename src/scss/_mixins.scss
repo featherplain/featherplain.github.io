@@ -1,0 +1,24 @@
+@charset "utf-8";
+
+@mixin button() {
+  .button {
+    display: inline-block;
+    box-shadow: $boxShadow;
+    background-color: #fff;
+    padding: 1rem 0.9rem;
+    text-align: center;
+    font-size: 1rem;
+    color: $brown;
+    border-radius: 8px;
+    line-height: 1;
+    text-decoration: none;
+    &.circle {
+      width: 54px;
+      height: 54px;
+      padding: 0.9rem;
+      border-radius: 50%;
+    }
+  }
+}
+
+@include button();

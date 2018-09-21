@@ -5,9 +5,10 @@
   "scripts": {
     "start": "node ./.bin/bs.js",
     "watch": "npm run pug & npm run node-sass ; npm run post-css",
-    "pug": "pug ./src/pug/index.pug --out ./ -P -w",
+    "pug": "pug ./src/pug/index.pug --obj ./src/pug/data.json --out ./ -P -w",
     "node-sass": "node-sass ./src/scss/index.scss --output ./assets/css/ --output-style compressed -w -r",
-    "post-css": "postcss assets/css/index.css -r -w"
+    "post-css": "postcss assets/css/index.css -r -w",
+    "sprite": "svg-sprite src/svg/*.svg -C ./src/svg/config.json"
   },
   "repository": "git@github.com:featherplain/featherplain.github.io.git",
   "author": "featherplain <megumi@featherplain.com>",
@@ -18,6 +19,7 @@
     "node-sass": "^4.9.3",
     "postcss-cli": "^6.0.0",
     "pug": "^2.0.3",
-    "pug-cli": "^1.0.0-alpha6"
+    "pug-cli": "^1.0.0-alpha6",
+    "svg-sprite": "^1.5.0"
   }
 }

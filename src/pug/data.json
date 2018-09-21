@@ -1,0 +1,13 @@
+{
+  "path": {
+    "images": "assets/images/",
+    "sprite": "assets/images/sprite.symbol.svg"
+  },
+  "url": {
+    "tw": "https://twitter.com/featherplain",
+    "fb": "https://www.facebook.com/featherplain",
+    "gh": "https://github.com/featherplain",
+    "insta": "https://www.instagram.com/featherplain",
+    "font": "https://fonts.googleapis.com/css?family=Nunito:600,700"
+  }
+}

@@ -1,22 +1,65 @@
 @charset "utf-8";
 
 @import 'settings';
+@import 'mixins';
+@import 'default';
 
-p {
-  color: $brown;
+* {
+  box-sizing: border-box;
+  &:before,
+  &:after, {
+    box-sizing: border-box;
+  }
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: $beige;
+  font-family: $fontFamily;
+  font-size: 16px;
 }
 
 h1 {
-  font-size: 16px;
+  text-align: center;
+  font-size: 2rem;
   font-weight: 700;
   color: $brown;
+  margin: 0.8rem auto 1rem auto;
 }
 
-.div {
+.container {
+  width: 100%;
+  max-width: 640px;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 8vh;
+  background-color: #fff;
+}
+
+.mainIcon {
+  display: block;
+  width: 120px;
+  margin: auto;
+}
+
+.buttonGroup {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  &:hover {
-    color: #ddd;
+  justify-content: center;
+  padding: 2rem 0;
+  &__item {
+    padding: 0 0.4rem;
   }
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}
+
+.textlink {
+  display: block;
+  text-align: center;
+  text-decoration: underline;
 }

@@ -2,16 +2,39 @@ doctype html
 html(lang="ja")
   head
     title= pageTitle
-    script(type='text/javascript').
+    script(type="text/javascript").
       if (foo) bar(1 + 5)
-    link(rel='stylesheet', href='assets/css/index.css')
+    link(rel="stylesheet", href="assets/css/index.css")
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Nunito:600,700")
+    meta(name="viewport", content="width=device-width")
   body
-    h1 Pug - node template engine
-    #container.col
-      if youAreUsingPug
-        p You are amazing
-      else
-        p Get on it!
-      p.
-        Pug is a terse and simple templating language with a strong focus on performance and powerful features.
-        aaaaaagggg
+    .container
+      svg(class="", role="img", class="mainIcon")
+        title featherplain
+        use(xmlns:xlink="http://www.w3.org/1999/xlink", xlink:href="/assets/images/sprite.symbol.svg#icon_featherplain")
+
+      h1 @featherplain
+
+      ul.buttonGroup
+        li.buttonGroup__item
+          a(href="https://twitter.com/featherplain/", target="_self", class="button circle")
+            svg(class="", role="img", class="icon")
+              title Twitter
+              use(xmlns:xlink="http://www.w3.org/1999/xlink", xlink:href="/assets/images/sprite.symbol.svg#icon_twitter")
+        li.buttonGroup__item
+          a(href="https://www.facebook.com/featherplain/", target="_self", class="button circle")
+            svg(class="", role="img", class="icon")
+              title Facebook
+              use(xmlns:xlink="http://www.w3.org/1999/xlink", xlink:href="/assets/images/sprite.symbol.svg#icon_facebook")
+        li.buttonGroup__item
+          a(href="https://www.instagram.com/featherplain/", target="_self", class="button circle")
+            svg(class="", role="img", class="icon")
+              title Instagram
+              use(xmlns:xlink="http://www.w3.org/1999/xlink", xlink:href="/assets/images/sprite.symbol.svg#icon_instagram")
+        li.buttonGroup__item
+          a(href="https://github.com/featherplain/", target="_self", class="button circle")
+            svg(class="", role="img", class="icon")
+              title GitHub
+              use(xmlns:xlink="http://www.w3.org/1999/xlink", xlink:href="/assets/images/sprite.symbol.svg#icon_github")
+
+      a(href="https://www.featherplain.com/", target="_self", class="textlink") See my portfolio 🚀
