@@ -47,15 +47,18 @@ h1 {
 .buttonGroup {
   display: flex;
   justify-content: center;
-  padding: 2rem 0;
+  flex-wrap: wrap;
+  padding: 0;
+  width: 50vw;
+  margin: 0 auto 4vh auto;
   &__item {
-    padding: 0 0.4rem;
+    padding: 0.6rem;
   }
 }
 
 .icon {
-  width: 24px;
-  height: 24px;
+  width: 32px;
+  height: 32px;
 }
 
 .textlink {
