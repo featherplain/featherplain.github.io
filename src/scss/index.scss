@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+@import 'settings';
+
+p {
+  color: $brown;
+}
+
+h2 {
+  font-size: 16px;
+  font-weight: 700;
+  color: $brown;
+}
+
+.div {
+  display: flex;
+}
