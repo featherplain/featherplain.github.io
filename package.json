@@ -1,12 +1,12 @@
 {
   "name": "featherplain.github.io",
   "version": "0.0.1",
-  "main": "docs/index.html",
+  "main": "index.html",
   "scripts": {
     "start": "node ./.bin/bs.js",
     "watch": "npm run pug & npm run node-sass",
-    "pug": "pug ./src/pug/index.pug --out ./docs/ -P -w",
-    "node-sass": "node-sass ./src/scss/index.scss --output ./docs/ --output-style compressed -w -r; npx postcss *.css --use autoprefixer -d docs/"
+    "pug": "pug ./src/pug/index.pug --out ./ -P -w",
+    "node-sass": "node-sass ./src/scss/index.scss --output ./assets/css/ --output-style compressed -w -r; npx postcss ./assets/css/*.css --use autoprefixer -d ./assets/css/"
   },
   "repository": "git@github.com:featherplain/featherplain.github.io.git",
   "author": "featherplain <megumi@featherplain.com>",
