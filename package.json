@@ -4,14 +4,13 @@
   "main": "index.html",
   "scripts": {
     "start": "node ./.bin/bs.js",
-    "watch": "npm run pug & npm run node-sass ; npm run post-css",
-    "pug": "pug ./src/pug/index.pug --obj ./src/pug/data.json --out ./ -P -w",
-    "node-sass": "node-sass ./src/scss/index.scss --output ./assets/css/ --output-style compressed -w -r",
-    "post-css": "postcss assets/css/index.css -r -w",
+    "watch": "npm run pug & npm run sass",
+    "pug": "pug --obj ./src/pug/data.json ./src/pug/index.pug --out ./ -P -w",
+    "sass": "node-sass ./src/scss/*.scss --output ./assets/css/ --output-style compressed -w -r",
     "sprite": "svg-sprite src/svg/*.svg -C ./src/svg/config.json"
   },
   "repository": "git@github.com:featherplain/featherplain.github.io.git",
-  "author": "featherplain <megumi@featherplain.com>",
+  "author": "featherplain",
   "license": "MIT",
   "dependencies": {
     "autoprefixer": "^9.1.5",

@@ -8,6 +8,5 @@ var browserSync = require('browser-sync');
  */
 browserSync({
   server: './',
-  watch: ['./src/pug/index.pug', './src/scss/*.scss'],
   files: ['./*.html', './assets/css/*.css']
 });
