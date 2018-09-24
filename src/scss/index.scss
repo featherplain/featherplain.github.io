@@ -19,9 +19,10 @@ body {
   background-color: $beige;
   font-family: $fontFamily;
   font-size: 16px;
+  -webkit-font-smoothing: antialiased;
 }
 
-h1 {
+.pageTitle {
   text-align: center;
   font-size: 2rem;
   font-weight: 700;
@@ -29,18 +30,25 @@ h1 {
   margin: 0.8rem auto 1rem auto;
 }
 
+.text {
+  color: $brown;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 0.4rem;
+}
+
 .container {
   width: 100%;
   max-width: 640px;
   height: 100vh;
   margin: 0 auto;
-  padding: 8vh;
+  padding: 4vh;
   background-color: #fff;
 }
 
 .mainIcon {
   display: block;
-  width: 120px;
+  width: 100px;
   margin: auto;
 }
 
@@ -68,4 +76,5 @@ h1 {
   display: block;
   text-align: center;
   text-decoration: underline;
+  font-weight: 500;
 }

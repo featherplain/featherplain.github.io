@@ -1,40 +1,41 @@
 doctype html
-html(lang="ja")
+html(lang='ja')
   head
-    title= pageTitle
-    script(type="text/javascript").
-      if (foo) bar(1 + 5)
-    link(rel="stylesheet", href="assets/css/index.css")
-    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Nunito:600,700")
-    meta(name="viewport", content="width=device-width")
+    title featherplain
+    link(rel='stylesheet', href='assets/css/index.css')
+    link(rel='stylesheet', href=font.en)
+    link(rel='stylesheet', href=font.ja)
+    meta(name='viewport', content='width=device-width')
   body
     .container
-      svg(class="", role="img", class="mainIcon")
+      svg(role='img', class='mainIcon')
         title featherplain
-        use(xmlns:xlink="http://www.w3.org/1999/xlink", xlink:href="/assets/images/sprite.symbol.svg#icon_featherplain")
+        use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href=path.sprite + '#icon_featherplain')
 
-      h1 @featherplain
+      h1.pageTitle @featherplain
+
+      p.text フォローはお気軽に 🙌
 
       ul.buttonGroup
         li.buttonGroup__item
-          a(href="https://twitter.com/featherplain/", target="_self", class="button circle")
-            svg(class="", role="img", class="icon")
+          a(href=url.tw, target='_self', class='button circle')
+            svg(class='', role='img', class='icon')
               title Twitter
-              use(xmlns:xlink="http://www.w3.org/1999/xlink", xlink:href="/assets/images/sprite.symbol.svg#icon_twitter")
+              use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href=path.sprite + '#icon_twitter')
         li.buttonGroup__item
-          a(href="https://www.facebook.com/featherplain/", target="_self", class="button circle")
-            svg(class="", role="img", class="icon")
+          a(href=url.fb, target='_self', class='button circle')
+            svg(class='', role='img', class='icon')
               title Facebook
-              use(xmlns:xlink="http://www.w3.org/1999/xlink", xlink:href="/assets/images/sprite.symbol.svg#icon_facebook")
+              use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href=path.sprite + '#icon_facebook')
         li.buttonGroup__item
-          a(href="https://www.instagram.com/featherplain/", target="_self", class="button circle")
-            svg(class="", role="img", class="icon")
+          a(href=url.insta, target='_self', class='button circle')
+            svg(class='', role='img', class='icon')
               title Instagram
-              use(xmlns:xlink="http://www.w3.org/1999/xlink", xlink:href="/assets/images/sprite.symbol.svg#icon_instagram")
+              use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href=path.sprite + '#icon_instagram')
         li.buttonGroup__item
-          a(href="https://github.com/featherplain/", target="_self", class="button circle")
-            svg(class="", role="img", class="icon")
+          a(href=url.gh, target='_self', class='button circle')
+            svg(class='', role='img', class='icon')
               title GitHub
-              use(xmlns:xlink="http://www.w3.org/1999/xlink", xlink:href="/assets/images/sprite.symbol.svg#icon_github")
+              use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href=path.sprite + '#icon_github')
 
-      a(href="https://www.featherplain.com/", target="_self", class="textlink") See my portfolio 🚀
+      a(href=url.site, target='_self', class='textlink') ポートフォリオをみる 🚀
