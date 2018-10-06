@@ -70,6 +70,18 @@ body {
 .icon {
   width: 32px;
   height: 32px;
+  &.twitter {
+    fill: #1da1f2;
+  }
+  &.facebook {
+    fill: #3b5998;
+  }
+  &.instagram {
+    fill: #833ab4;
+  }
+  &.github {
+    fill: #333;
+  }
 }
 
 .textlink {
